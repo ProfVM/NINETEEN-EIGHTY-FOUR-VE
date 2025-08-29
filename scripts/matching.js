@@ -14,7 +14,11 @@
 // - GetSelextedItemRight()
 //=========================================
 
+<<<<<<< HEAD
 const textSelect = "Select";
+=======
+const textSelect = "Seleziona";
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 
 // ---------------------------------------------
 // Genera una sequenza casuale di numeri interi
@@ -90,7 +94,11 @@ function CreateMatchingLists(listaLeft, listLeftHtml, listaRight, orderLeft, ord
             textHtml += "<ul ID='" + idDropdownLeft + "' class='dropdown-menu qf-matching-class qf-matching-left-class qf-matching-left-dropdown-class'>";
 
             for (i = 0; i < listaLeft.length; i++) {
+<<<<<<< HEAD
                 textHtml += "<li><a href='javascript:void(0);' class='qf-matching-class qf-matching-left-class qf-matching-left-item-class'>Match " + (nMatching + 1) + "</a></li>";
+=======
+                textHtml += "<li><a href='javascript:void(0);' class='qf-matching-class qf-matching-left-class qf-matching-left-item-class'>Associazione " + (nMatching + 1) + "</a></li>";
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
             }
             textHtml += "</ul>";
             textHtml += "</div>"; // dropdown
@@ -217,7 +225,11 @@ function SetDefaultLeftColumn(listaLeft, dropdownIdPrefix, hideLeftDropdown)
     for (var nMatching = 0; nMatching < listaLeft.length; nMatching++)
     {
         if (hideLeftDropdown) {
+<<<<<<< HEAD
             var itemName = "Match " + (nMatching + 1);
+=======
+            var itemName = "Associazione " + (nMatching + 1);
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
             SetSelectedItemLeft(dropdownIdPrefix, nMatching, itemName);
         }
         else {

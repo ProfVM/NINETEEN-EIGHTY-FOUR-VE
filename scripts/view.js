@@ -603,7 +603,11 @@ function PrintAnsweredToAllQuestions()
 
 	HideQuestionMenu();
 	HideRetireButton();
+<<<<<<< HEAD
 	$('#idModalNotificationText').text('You have answered all of the questions');
+=======
+	$('#idModalNotificationText').text('Hai risposto a tutte le domande');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	$('#idModalNotification').modal('show');
 
 	// Set a timeout to hide the element again
@@ -637,7 +641,11 @@ function PrintTimeOver()
 	
 	HideQuestionMenu();
 	HideRetireButton();
+<<<<<<< HEAD
 	$('#idModalNotificationText').text('The time is over!');
+=======
+	$('#idModalNotificationText').text('Il tempo a tua disposizione è scaduto');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	$('#idModalNotification').modal('show');
 
 	// Set a timeout to hide the element again
@@ -677,7 +685,11 @@ function DoTimeOver()
 function PrintVerifyFailed()
 {
 	$("#idModalConfirmationYesButton").unbind('click');
+<<<<<<< HEAD
 	$('#idModalNotificationText').text('Some questions have incomplete answers. You need to answer to continue');
+=======
+	$('#idModalNotificationText').text('Alcune domande hanno risposta incompleta. È necessario rispondere per proseguire');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	$('#idModalNotification').modal('show');
 }
 
@@ -698,7 +710,11 @@ function PrintAskAbandonQuiz()
 			GoToPage(FINAL_PAGE_URL);
 		}
 	});
+<<<<<<< HEAD
 	$('#idModalConfirmationText').text('Are you sure?');
+=======
+	$('#idModalConfirmationText').text('Sei sicuro di volerti ritirare?');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	$('#idModalConfirmation').modal('show');
 }
 
@@ -708,7 +724,11 @@ function PrintAskConfirmOK(InitQuestion)
 	{
 		onOkButtonClick(InitQuestion, true);
 	});
+<<<<<<< HEAD
 	$('#idModalConfirmationText').text('Confirm your answer ?');
+=======
+	$('#idModalConfirmationText').text('Confermi la tua risposta ?');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	$('#idModalConfirmation').modal('show');
 }
 
@@ -718,7 +738,11 @@ function PrintAskVerifyQuest()
 	$("#idModalConfirmationYesButton").unbind('click').click(function () {
 		onVerifyButtonClick();
 	});
+<<<<<<< HEAD
 	$('#idModalConfirmationText').text('Are you sure to confirm all your answers ?');
+=======
+	$('#idModalConfirmationText').text('Confermi tutte le tue risposte ?');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	$('#idModalConfirmation').modal('show');
 }
 
@@ -727,48 +751,84 @@ function PrintRegistrationSuccess()
 	$("#idModalNotificationCloseButton").click(function () {
 		GoToPage(INITIAL_PAGE_URL);
 	});
+<<<<<<< HEAD
 	$('#idModalNotificationText').text('The registration was successful');
+=======
+	$('#idModalNotificationText').text('Registrazione avvenuta con successo');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	$('#idModalNotification').modal('show');
 }
 
 function PrintDoneBefore(questionIndex)
 {
+<<<<<<< HEAD
 	PrintWarning('You have already answered the question', questionIndex);
+=======
+	PrintWarning('Hai già risposto a questa domanda', questionIndex);
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintQuestionTimeIsElapsed(questionIndex)
 {
+<<<<<<< HEAD
 	PrintWarning('Time for answering this question is elapsed', questionIndex);
+=======
+	PrintWarning('Il tempo per rispondere a questa domanda è scaduto', questionIndex);
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintNeedToAnswer(questionIndex)
 {
+<<<<<<< HEAD
 	PrintWarning('The answer is incompleted. Please, choose at least one answer', questionIndex);  // "Prima di proseguire devi rispondere alla domanda"
+=======
+	PrintWarning('La risposta alla domanda è incompleta. È necessario rispondere ad almeno una risposta', questionIndex);  // "Prima di proseguire devi rispondere alla domanda"
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintNeedToAnswerAllItem(questionIndex)
 {
+<<<<<<< HEAD
 	PrintWarning('The answer is incompleted. Please, choose all the items', questionIndex);  // "Prima di proseguire devi rispondere al tutte le uscite"
+=======
+	PrintWarning('La risposta alla domanda è incompleta. È necessario rispondere a tutte le opzioni', questionIndex);  // "Prima di proseguire devi rispondere al tutte le uscite"
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintNeedToAnswerCorrectly(questionIndex)
 {
+<<<<<<< HEAD
 	PrintWarning('Before next step, you have to answer it correctly', questionIndex);  // "Prima di proseguire devi rispondere alla domanda in modo corretto"
+=======
+	PrintWarning('Prima di proseguire, devi rispondere esattamente', questionIndex);  // "Prima di proseguire devi rispondere alla domanda in modo corretto"
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintWrongKeyword(questionIndex)
 {
+<<<<<<< HEAD
 	PrintError('Unable to continue the quiz', questionIndex);
+=======
+	PrintError('Non è possibile la continuazione del quiz', questionIndex);
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintErrorComputeMark(questionIndex)
 {
+<<<<<<< HEAD
 	PrintError('unable to compute final mark', questionIndex);
+=======
+	PrintError('Impossibile calcolare voto finale', questionIndex);
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintErrorLoadPageFailed()
 {
+<<<<<<< HEAD
 	PrintGlobalError('Error during loading page or refresh page is not allowed');
+=======
+	PrintGlobalError('Errore di caricamento pagina oppure aggiorna pagina non è consentito');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function PrintGlobalError(msg)
@@ -787,11 +847,19 @@ function PrintGlobalWarning(msg)
 
 function PrintCopyrightMsg()
 {
+<<<<<<< HEAD
 	var copyRightMsg = "This quiz was created ";
 	if ((options.author !== null) && (options.author !== '')) {
 		copyRightMsg += "by " + options.author + " ";
 	}
 	copyRightMsg += "with QuizFaber 4.1";
+=======
+	var copyRightMsg = "Questo quiz è stato creato ";
+	if ((options.author !== null) && (options.author !== '')) {
+		copyRightMsg += "da " + options.author + " ";
+	}
+	copyRightMsg += "con QuizFaber 4.1";
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 
 	$('#idCopyrightMsg').html("<I>" + copyRightMsg + "</I>");
 }
@@ -864,7 +932,11 @@ function ShuffleQuestionsSamePage()
 		idPanelQuest = "#idPanel" + nQuest;
 		
 		newContent = fromContent[quiz.ordineDomande[i]];
+<<<<<<< HEAD
 		newContent = newContent.replace("<b>question " + nNewQuest + "</b>", "<b>question " + nQuest + "</b>")
+=======
+		newContent = newContent.replace("<b>Domanda " + nNewQuest + "</b>", "<b>Domanda " + nQuest + "</b>")
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 
 		$(idPanelQuest).html(newContent);
 	}
@@ -888,7 +960,11 @@ function ShowQuestionMenu()
 				html += "<a href='#linkQst" + (n + 1) + "' class='qst_menu_link'>" + (i + 1) + "</a> ";
 			}
 		}
+<<<<<<< HEAD
 		menu.html("to be answered<br />" + html);		
+=======
+		menu.html("da rispondere<br />" + html);		
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	}
 }
 

@@ -150,7 +150,11 @@ function StartQuizOnPage()
 		}
 		if (IsLastPage())
 		{
+<<<<<<< HEAD
 			$('#idLinkNext').text('Finish');
+=======
+			$('#idLinkNext').text('Completa');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		}
 	}
 	StorePage();
@@ -529,7 +533,11 @@ function PostSession(question, questionIndex)
 					return;
 				}
 				else {
+<<<<<<< HEAD
 					ShowSnackbarError('Error while saving the session');
+=======
+					ShowSnackbarError('Errore nel salvataggio sessione');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 				}
 			}
 		});
@@ -567,10 +575,17 @@ function SaveQuizPartial()
 			Authorization: 'Bearer ' + quiz.currentUser.authToken
 		},
 		success: function (data) {
+<<<<<<< HEAD
 			ShowSnackbarSuccess('Quiz saved correctly');
 		},
 		error: function (jqXHR, exception) {
 			ShowSnackbarError('Error while saving the session');
+=======
+			ShowSnackbarSuccess('Quiz salvato correttamente');
+		},
+		error: function (jqXHR, exception) {
+			ShowSnackbarError('Errore nel salvataggio sessione');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		},
 		complete: function (xhr, textStatus) {
 		}

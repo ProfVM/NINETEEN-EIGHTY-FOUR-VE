@@ -43,7 +43,11 @@ const QMAKE_SEND_WEBAPP = 4;
 const QMAKE_SEND_NODEJS = 5;
 const QMAKE_SEND_NODEJS_LOCAL = 6;  
 
+<<<<<<< HEAD
 const QUIZ_KEYWORD = "OHlFNOljulWxafsx";
+=======
+const QUIZ_KEYWORD = "Sm7zNOwaincM3gh3";
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 
 const USER_LOGIN_ANONYMOUS = "Anonymous";
 const USER_EMAIL_ANONYMOUS = "anonymous@anonymous.nowhere";
@@ -59,10 +63,17 @@ const options =
 	title: "1984 Classe VE",
 	description: "English Entry Test \"1984\" George Orwell",
 	id: 0,
+<<<<<<< HEAD
 	numOfQuestions: 52,
 	notValuatedQuestionsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
 	noChoicePointsArray: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	weightsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,10],
+=======
+	numOfQuestions: 120,
+	notValuatedQuestionsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+	noChoicePointsArray: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+	weightsArray: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10],
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	maxtime: 3540, 
 	maxmark: 10,
 	minmark: 0,
@@ -127,7 +138,11 @@ const options =
 	indicateOnlySelAns: false,
 	showUnansweredQuests: true,
 	htmlCharset: "Windows-1252",
+<<<<<<< HEAD
 	htmlLanguage: "en",
+=======
+	htmlLanguage: "it",
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	reportHideRevision: false,
 	lockQuestionAfterConfirm: false,
 	showEngagementRules: false,

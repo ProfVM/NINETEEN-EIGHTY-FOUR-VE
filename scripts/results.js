@@ -40,7 +40,11 @@ function PageLoadResult()
 	{
 		if (options.needValuateQuiz && options.warnNeedRetake && options.allowRetakeQuiz && (quiz.mark <= options.upperMarkForRetake) && (quiz.numOfRetake < options.maxNumRetake))
 		{
+<<<<<<< HEAD
 			PrintWarning("You have to retake the quiz because the mark is less than " + options.upperMarkForRetake, 'R');
+=======
+			PrintWarning("Devi ripetere il quiz in quanto il tuo voto è inferiore a " + options.upperMarkForRetake, 'R');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		}
 
 		if (options.needSaveQuiz)
@@ -281,7 +285,11 @@ function PrintReportQuestionDetails(qstNum,question)
 
 	textHtml += "<div class='panel panel-primary qf-panel-question-class'>";
 
+<<<<<<< HEAD
 	htmlHeader = "<div class='panel-heading qf-panel-question-heading-class'><b>question " + textToDisplay + "</b></div>";
+=======
+	htmlHeader = "<div class='panel-heading qf-panel-question-heading-class'><b>Domanda " + textToDisplay + "</b></div>";
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	textHtml += htmlHeader;
 
 	textHtml += "<div class='panel-body qf-panel-question-body-class'>";
@@ -293,6 +301,7 @@ function PrintReportQuestionDetails(qstNum,question)
 	}
 
 	if (question.valid === 1) {
+<<<<<<< HEAD
 		resultMsg = "Correct answer";
 	}
 	else if (question.valid === -1) {
@@ -315,13 +324,41 @@ function PrintReportQuestionDetails(qstNum,question)
 		}
 		else {
 			resultMsg = "Partially correct answer";
+=======
+		resultMsg = "Risposta corretta";
+	}
+	else if (question.valid === -1) {
+		if (question.noChoice) {
+			resultMsg = "Domanda senza risposta";
+		}
+		else {
+			resultMsg = "Risposta errata";
+		}
+	}
+	else if ((question.valid === 2) && !options.reportHideRowQstNotValuated) {
+		resultMsg = "Domanda non valutata";
+	}
+	else if (question.valid === 3) {
+		if (question.nScore === question.maxScore) {
+			resultMsg = "Risposta corretta";
+		}
+		else if (question.nScore === question.minScore) {
+			resultMsg = "Risposta errata";
+		}
+		else {
+			resultMsg = "Risposta parzialmente corretta";
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		}
 	}
 	textHtml += "<p class='revision-class'><i>" + resultMsg;
 
 	//if ((question.valid === -1) && (question.typeOfQuestion === QMAKE_MULTIANS))
 	//{
+<<<<<<< HEAD
 	//	textHtml += ". The correct answer was " + GetListOfRightAnsLetters(question);
+=======
+	//	textHtml += ". La risposta corretta era " + GetListOfRightAnsLetters(question);
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	//}
 	textHtml += "</i></p>";
 
@@ -329,6 +366,7 @@ function PrintReportQuestionDetails(qstNum,question)
 	{
 		if (question.minScore === 0) {
 			if (question.typeOfQuestion === QMAKE_MATCHING) {
+<<<<<<< HEAD
 				textHtml += "<p class='revision-class'><i>Right sentences : " + question.nScore + "/" + question.maxScore + "</i></p>";
 			}
 			else {
@@ -337,6 +375,16 @@ function PrintReportQuestionDetails(qstNum,question)
 		}
 		else {
 			textHtml += "<p class='revision-class'><i>Score : " + question.nScore + " [" + question.minScore + " , " + question.maxScore + "]</i></p>";
+=======
+				textHtml += "<p class='revision-class'><i>Affermazioni corrette : " + question.nScore + "/" + question.maxScore + "</i></p>";
+			}
+			else {
+				textHtml += "<p class='revision-class'><i>Punteggio : " + question.nScore + "/" + question.maxScore + "</i></p>";
+			}
+		}
+		else {
+			textHtml += "<p class='revision-class'><i>Punteggio : " + question.nScore + " [" + question.minScore + " , " + question.maxScore + "]</i></p>";
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		}
 	}
 
@@ -399,7 +447,11 @@ function PrintReportAnswerDetails(numOfAns, typeOfQuestion, answer)
 		}
 		else
 		{
+<<<<<<< HEAD
 			htmlAns += "Answer " + numOfAns;
+=======
+			htmlAns += "Risposta " + numOfAns;
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		}
 		htmlAns += "</p>";
 
@@ -611,13 +663,21 @@ function PostLogout(id)
 
 function PostResultsSuccessCallback()
 {
+<<<<<<< HEAD
 	PrintSuccess('Quiz saved correctly', 'R');
+=======
+	PrintSuccess('Quiz salvato correttamente', 'R');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	deleteCookie("qmake.quiz");
 }
 
 //function PostResultsWarningCallback()
 //{
+<<<<<<< HEAD
 //	PrintWarning('Results are already been sent. This transmission will be ignored', 'R');
+=======
+//	PrintWarning('Risultato già acquisito. Questo invio verrà ignorato', 'R');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 //	deleteCookie("qmake.quiz");
 //}
 
@@ -642,7 +702,11 @@ function PostResultsFailCallback(jqXHR, exception)
 		msg = 'Uncaught Error.' + jqXHR.responseText;
 	}
 
+<<<<<<< HEAD
 	PrintError('Unable to save quiz results : ' + msg, 'R');
+=======
+	PrintError('Impossibile salvare i risultati del quiz : ' + msg, 'R');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 }
 
 function RemoveUndefinedQuestions() {
@@ -752,6 +816,7 @@ function PostLogin(email, passhash, domainId) {
 		},
 		error: function (xhr, textStatus, errorThrown) {
 			if (xhr.status === 401) {
+<<<<<<< HEAD
 				PrintError('User unauthorized', 'R');
 			}
 			else if (xhr.status === 404) {
@@ -759,6 +824,15 @@ function PostLogin(email, passhash, domainId) {
 			}
 			else {
 				PrintError('Login error : ' + xhr.status + " - " + errorThrown, 'R');
+=======
+				PrintError('Utente non autorizzato', 'R');
+			}
+			else if (xhr.status === 404) {
+				PrintError('Utente non trovato', 'R');
+			}
+			else {
+				PrintError('Errore di login : ' + xhr.status + " - " + errorThrown, 'R');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 			}
 		},
 		complete: function (xhr, textStatus) {

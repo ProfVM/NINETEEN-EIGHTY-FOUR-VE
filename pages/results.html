@@ -1,6 +1,11 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
+=======
+<html lang="it">
+<head>`r`n    <meta charset="utf-8">
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
     <title>1984  Classe VE</title>
 
     <meta http-equiv="Content-Type" content="text/html; CHARSET=Windows-1252">
@@ -47,6 +52,7 @@
                     <p class="lead">
                         <span id="idQuizDescription"></span>
                         <p id="idQuizProfile" style="display:none">
+<<<<<<< HEAD
                             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#idQuizProfileInfo">More info</button>
                             <div id="idQuizProfileInfo" class="collapse">
                                 <ul class="list-group">
@@ -54,6 +60,15 @@
                                     <li class="list-group-item"><strong>Argument</strong><span class="pull-right" id="idArgument"></span></li>
                                     <li class="list-group-item"><strong>Company</strong><span class="pull-right" id="idCompany"></span></li>
                                     <li class="list-group-item"><strong>Date</strong><span class="pull-right" id="idDate"></span></li>
+=======
+                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#idQuizProfileInfo">Dettagli</button>
+                            <div id="idQuizProfileInfo" class="collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><strong>Autore</strong><span class="pull-right" id="idAuthor"></span></li>
+                                    <li class="list-group-item"><strong>Argomento</strong><span class="pull-right" id="idArgument"></span></li>
+                                    <li class="list-group-item"><strong>Organizzazione o istituto</strong><span class="pull-right" id="idCompany"></span></li>
+                                    <li class="list-group-item"><strong>Data</strong><span class="pull-right" id="idDate"></span></li>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                                 </ul>
                             </div>
                         </p>
@@ -64,6 +79,7 @@
 
         <div id="divErrorGlobal" class="alert alert-danger alert-dismissible fade in" style="display:none">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+<<<<<<< HEAD
             <strong>Error</strong> <span id="idErrorMsgGlobal"></span>
         </div>
         <div id="divWarningGlobal" class="alert alert-warning alert-dismissible fade in" style="display:none">
@@ -73,12 +89,27 @@
 
         <div class="panel panel-primary qf-panel-result-class" id="resultPanelId">
             <div class="panel-heading qf-panel-result-heading-class"><b>Quiz Result</b></div>
+=======
+            <strong>Errore!</strong> <span id="idErrorMsgGlobal"></span>
+        </div>
+        <div id="divWarningGlobal" class="alert alert-warning alert-dismissible fade in" style="display:none">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Attenzione!</strong> <span id="idWarningMsgGlobal" />
+        </div>
+
+        <div class="panel panel-primary qf-panel-result-class" id="resultPanelId">
+            <div class="panel-heading qf-panel-result-heading-class"><b>Risultati</b></div>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 
             <div class="panel-body qf-panel-result-body-class">
 
                 <div class="progress" id="idProgressSavingResults">
                     <div class="progress-bar progress-bar-warning progress-bar-striped active" id="idProgressSavingResultsMessage" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+<<<<<<< HEAD
                         Saving the quiz
+=======
+                        Salvataggio quiz in corso
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                     </div>
                 </div>
 
@@ -89,17 +120,26 @@
 
                 <div id="divErrorR" class="alert alert-danger alert-dismissible fade in" style="display:none">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+<<<<<<< HEAD
                     <strong>Error</strong> <span id="idErrorMsgR"></span>
+=======
+                    <strong>Errore!</strong> <span id="idErrorMsgR"></span>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                 </div>
 
                 <div id="divWarningR" class="alert alert-warning alert-dismissible fade in" style="display:none">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+<<<<<<< HEAD
                     <strong>Watch out!</strong> <span id="idWarningMsgR" />
+=======
+                    <strong>Attenzione!</strong> <span id="idWarningMsgR" />
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                 </div>
 
                 <ul class="list-group" id="idReportSummary">
                     <li class="list-group-item qf-result-summary-item-class">
                         <div class="row">
+<<<<<<< HEAD
                             <div class="col-sm-6 col-xs-6" id="idReportNameOrEmail">Candidate name</div>
                             <div id="idUserName" class="col-sm-6 col-xs-6 text-right"></div>
                         </div>
@@ -112,28 +152,56 @@
                     <li class="list-group-item qf-result-summary-item-class" id="idReportStartDate">
                         <div class="row">
                             <div class="col-sm-6 col-xs-6">Date</div>
+=======
+                            <div class="col-sm-6 col-xs-6" id="idReportNameOrEmail">Nome</div>
+                            <div id="idUserName" class="col-sm-6 col-xs-6 text-right"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item qf-result-summary-item-class" id="idReportNumOfQuestions">Numero di domande <span id="idNumOfQuestions" class="badge"></span></li>
+                    <li class="list-group-item revision-class qf-result-summary-item-class" id="idReportCorrectAnswers">Risposte corrette <span id="idCorrectAnswers" class="badge"></span></li>
+                    <li class="list-group-item revision-class qf-result-summary-item-class" id="idReportWrongAnswers">Risposte errate <span id="idWrongAnswers" class="badge"></span></li>
+                    <li class="list-group-item revision-class qf-result-summary-item-class" id="idReportNotAnswered">Domande non risposte <span id="idNotAnswered" class="badge"></span></li>
+                    <li class="list-group-item revision-class qf-result-summary-item-class" id="idReportNotValuatedAnswers">Domande non valutate <span id="idNotValuatedAnswers" class="badge"></span></li>
+                    <li class="list-group-item qf-result-summary-item-class" id="idReportStartDate">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6">Data</div>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                             <div id="idStartDate" class="col-sm-6 col-xs-6 text-right"></div>
                         </div>
                     </li>
                     <li class="list-group-item qf-result-summary-item-class" id="idReportTimeElapsed">
                         <div class="row">
+<<<<<<< HEAD
                             <div class="col-sm-6 col-xs-6">Time elapsed</div>
+=======
+                            <div class="col-sm-6 col-xs-6">Tempo impiegato</div>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                             <div id="idTimeElapsed" class="col-sm-6 col-xs-6 text-right"></div>
                         </div>
                     </li>
                     <li class="list-group-item revision-class qf-result-summary-item-class" id="idReportFinalResult">
                         <div class="row">
                             <div class="col-sm-6 col-xs-6">
+<<<<<<< HEAD
                                 <span id="idLabelFinalMark" style="display:none">MARK</span>
                                 <span id="idLabelSeparatorMarkPoints" style="display:none"> | </span>
                                 <span id="idLabelFinalPoints" style="display:none">Score</span>
+=======
+                                <span id="idLabelFinalMark" style="display:none">Voto</span>
+                                <span id="idLabelSeparatorMarkPoints" style="display:none"> | </span>
+                                <span id="idLabelFinalPoints" style="display:none">Punteggio</span>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                             </div>
                             <div id="idFinalResult" class="col-sm-6 col-xs-6 text-right"></div>
                         </div>
                     </li>
                     <li class="list-group-item qf-result-summary-item-class" id="idReportNumRetake">
                         <div class="row">
+<<<<<<< HEAD
                             <div class="col-sm-6 col-xs-6">Number of retakes</div>
+=======
+                            <div class="col-sm-6 col-xs-6">Numero di ripetizioni</div>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
                             <div id="idNumRetake" class="col-sm-6 col-xs-6 text-right"></div>
                         </div>
                     </li>
@@ -149,10 +217,17 @@
         </div>
 
         <div class="text-center" id="idButtonBar">
+<<<<<<< HEAD
             <button type="button" id="idBtnPrint" class="btn btn-primary" onclick="onPrintClick()" style="display:none">PRINT</button>
             <button type="button" id="idBtnRepeat" class="btn btn-primary" onclick="onRepeatClick()" style="display:none">REPEAT</button>
             <button type="button" id="idBtnLinkback" class="btn btn-primary" onclick="GoToPage('', true)" style="display:none"></button>
             <button type="button" id="idBtnExit" class="btn btn-primary" onclick="onExitClick()">QUIT</button>
+=======
+            <button type="button" id="idBtnPrint" class="btn btn-primary" onclick="onPrintClick()" style="display:none">Stampa</button>
+            <button type="button" id="idBtnRepeat" class="btn btn-primary" onclick="onRepeatClick()" style="display:none">Ripeti</button>
+            <button type="button" id="idBtnLinkback" class="btn btn-primary" onclick="GoToPage('', true)" style="display:none"></button>
+            <button type="button" id="idBtnExit" class="btn btn-primary" onclick="onExitClick()">Esci</button>
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
         </div>
     </div>
 </body>

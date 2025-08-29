@@ -31,7 +31,11 @@ function PageLoadIndex()
 			for (var i = 0; i < options.urlParamArray.length; i++) {
 				var urlParam = options.urlParamArray[i];
 				if (!searchParams.has(urlParam)) {
+<<<<<<< HEAD
 					PrintWarning('Missing parameter for login authorization', 'I');
+=======
+					PrintWarning('Parametri mancanti per l&apos;autorizzazione al login', 'I');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 					break;
 				}
 			}
@@ -99,7 +103,11 @@ function onRegistration()
 
 	if ((!options.needSaveQuiz) || (options.saveQuizMode !== QMAKE_SEND_NODEJS && options.saveQuizMode !== QMAKE_SEND_NODEJS_LOCAL))
 	{
+<<<<<<< HEAD
 		PrintError('The quiz was not created with the enabled option : saving on server', 'X');
+=======
+		PrintError('Il quiz non è stato creato in modalità salvataggio su server', 'X');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		return;
 	}
 
@@ -152,6 +160,7 @@ function onRegistration()
 
 	if (email === "" || pwd === "" || missingMandatoryField)
 	{
+<<<<<<< HEAD
 		PrintWarning('All the fields with (*) are mandatory', 'X');
 	}
 	else if (!options.loginInsteadEmail && !ValidateEmail(email))
@@ -161,6 +170,17 @@ function onRegistration()
 	else if (pwd !== pwd2)
 	{
 		PrintWarning('Password mismatch', 'X');
+=======
+		PrintWarning('Tutti i campi con (*) sono obbligatori', 'X');
+	}
+	else if (!options.loginInsteadEmail && !ValidateEmail(email))
+	{
+		PrintWarning('Inserire un indirizzo email valido', 'X');
+    }
+	else if (pwd !== pwd2)
+	{
+		PrintWarning('Le password non coicidono', 'X');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 	}
 	else
 	{
@@ -185,7 +205,11 @@ function GetCheckLogin(loginKey, loginData)
 		data: { login: loginKey },
 		success: function (msg)
 		{
+<<<<<<< HEAD
 			PrintError('User already registered', 'X');
+=======
+			PrintError('Utente già registrato', 'X');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 
 			$('html').removeClass("wait");
 			$('#registrationBtnId').prop("disabled", false);
@@ -218,7 +242,11 @@ function PostRegistration(loginData)
 			PrintRegistrationSuccess();
 		},
 		error: function (xhr, textStatus, errorThrown ) {
+<<<<<<< HEAD
 			PrintError('Registration error : ' + xhr.status + (errorThrown ? (" - " + errorThrown) : ""), 'X');
+=======
+			PrintError('Errore di registrazione : ' + xhr.status + (errorThrown ? (" - " + errorThrown) : ""), 'X');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		},
 		complete: function (xhr, textStatus) {
 			$('html').removeClass("wait");
@@ -233,7 +261,11 @@ function onLogin()
 	{
 		if ((!options.needSaveQuiz) || (options.saveQuizMode !== QMAKE_SEND_NODEJS && options.saveQuizMode !== QMAKE_SEND_NODEJS_LOCAL))
 		{
+<<<<<<< HEAD
 			PrintError('The quiz was not created with the enabled option : saving on server', 'I');
+=======
+			PrintError('Il quiz non è stato creato in modalità salvataggio su server', 'I');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 			return;
 		}
 
@@ -260,7 +292,11 @@ function onLogin()
 		}
 		else
 		{
+<<<<<<< HEAD
 			PrintError('The field name cannot be empty', 'I');
+=======
+			PrintError('Il campo nome non può essere vuoto', 'I');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 		}
 	}
 }
@@ -301,6 +337,7 @@ function PostLogin(email, passhash, domainId)
 			EnsureMessageBoxVisibility();
 
 			if (xhr.status === 401) {
+<<<<<<< HEAD
 				PrintError('User unauthorized', 'I');
 			}
 			else if (xhr.status === 404) {
@@ -308,6 +345,15 @@ function PostLogin(email, passhash, domainId)
 			}
 			else  {
 				PrintError('Login error : ' + xhr.status + (errorThrown ? (' - ' + errorThrown) : ''), 'I');
+=======
+				PrintError('Utente non autorizzato', 'I');
+			}
+			else if (xhr.status === 404) {
+				PrintError('Utente non trovato', 'I');
+			}
+			else  {
+				PrintError('Errore di login : ' + xhr.status + (errorThrown ? (' - ' + errorThrown) : ''), 'I');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 			}
 
 			$('html').removeClass("wait");
@@ -348,7 +394,11 @@ function GetCheckQuiz(quizname, email, authToken)
 			}
 			else {
 				EnsureMessageBoxVisibility();
+<<<<<<< HEAD
 				PrintWarning('Quiz already taken', 'I');
+=======
+				PrintWarning('Quiz già svolto', 'I');
+>>>>>>> 1ff78c9aa2c3ec4f1fc7e84c7553d8d9884e670d
 			}
 			//}
 		},
